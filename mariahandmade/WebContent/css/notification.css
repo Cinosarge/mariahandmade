@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+/*
+ * Notifica per i risultati dell operazioni ajax asincrone
+ */
+ 
+.notification {
+	display: block;
+	position: fixed;
+	top: 8em;
+	right: 3em;
+	padding: 12px;
+	max-width: 250px;
+	background: green;
+	border-radius: 15px;
+	color: white;
+	font-size: 14pt;
+	visibility: hidden;
+}

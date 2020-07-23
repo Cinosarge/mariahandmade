@@ -1,0 +1,42 @@
+<header class="site-header">
+	<div class="tm-container float-wrapper">
+		<!-- Top left logo -->
+		<img class="site-logo" src="images/logo.png" width="60" height="60" alt="logo"/>
+		
+		<!-- Top left website name -->
+		<span class="site-name">Maria Handmade</span>
+		
+		<!-- TODO - Search bar -->
+		<div class="search-bar">
+			<form method="POST" action="searchProduct.do">
+				<input type="hidden" name="type" value="auto" />
+				<input type="text" name="query" required="required" />
+				<input type="submit" value="Cerca"/>
+			</form>
+		</div>
+		
+		<!-- Top right menu -->
+		<nav class="site-nav">
+			<ul>
+				<li><a href="/mariahandmade/">Home</a></li>
+				<li><a href="cart.do">Carrello</a></li>
+				
+				<c:if test="${sessionScope.userData.account.manager}">
+					<li><a href="AdminHome.jsp">Gestione</a></li>
+				</c:if>
+				
+				<c:choose>
+					<c:when test="${sessionScope.userData == null}">
+						<li><a href="Login.jsp">Login</a></li>
+						<li><a href="signin.do?checkoutAfterSignin=false">Registrati</a></li>
+					</c:when>
+					
+					<c:otherwise>
+						<li><a href="ClientProfile.jsp">Profilo</a>
+						<li><a href="#" onclick="sendLogoutRequest('checkCart')">Logout</a></li>
+					</c:otherwise>
+				</c:choose>
+			</ul>
+		</nav>
+	</div>
+</header>

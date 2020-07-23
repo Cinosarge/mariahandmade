@@ -1,0 +1,240 @@
+/*
+ * MariaHandamade Font
+ */
+@font-face{
+	font-family: 'Maria Handmade';
+	src: url('../font/MariaHandmade.ttf') format('truetype');
+}
+
+/*
+ * Google Open Sans Font
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*
+ * Reset code
+ */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: rgb(255, 255, 240);
+}
+
+img{
+	display: block;		/* no bottom spacing */
+	max-width: 100%;	/* resizable images */
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom:10px;
+	font-family: 'Maria Handmade', 'Open sans', sans-serif;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p{
+	margin-bottom: 20px;
+}
+
+hr{
+	border-radius: 50%;
+	border-color: rgb(102, 187, 106);
+}
+
+/*
+ * Footer positioning purpose
+ */
+.viewport-overlap{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.footer-spacer{
+	width: 100%;
+	min-height: 100%;
+}
+
+/*
+ * Generic classes
+ */
+.tm-container{
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+.float-wrapper::after{
+	display: block;
+	content: " ";
+	clear: both;
+	visibility: hidden;
+}
+
+/*
+ * Header layout. Includes styles for
+ * - top left logo image
+ * - top left website name
+ * - search bar
+ * - top right menu
+ */
+.site-header{
+	color: rgb(27, 94, 32);
+	background: linear-gradient(to right, rgb(165, 214, 167), rgb(76, 175, 80), rgb(165, 214, 167));
+}
+
+.site-logo{
+	float: left;
+	margin-left: 20px;
+}
+
+.site-name{
+	float: left;
+	line-height: 60px; /* SNEAKY! */
+	margin-left: 20px;
+	font-family: 'Maria Handmade', 'Open sans', sans-serif;
+	font-size: 2em; /* SNEAKY! */
+}
+
+.search-bar{
+	float: left;
+	line-height: 60px; /* SNEAKY! */
+	margin-left: 30px;
+}
+
+.search-bar input {
+	border: none;
+	border-radius: 3px;
+	padding: 8px;
+	color: rgb(27, 94, 32);
+	font-weight: bold;
+	background: rgb(255, 255, 240);
+	
+}
+
+.search-bar button {
+	border: none;
+	border-radius: 3px;
+	padding: 8px;
+	color: rgb(27, 94, 32);
+	font-weight: bold;
+	background: rgb(255, 255, 240);
+}
+
+.site-nav{
+	float: right;
+	margin: 0 20px;
+}
+
+.site-nav ul li{
+	display: inline-block;
+}
+
+.site-nav ul li:hover{
+	background: #fffff0;
+}
+
+.site-nav ul li a{
+	text-decoration: none;
+	color: rgb(27, 94, 32);
+	line-height: 60px;/* SNEAKY! */
+	padding: 0px 10px;
+}
+
+/*
+ * Navigation path section
+ */
+.path{
+	margin-bottom: 20px;
+}
+
+.path-nav{
+	float: left;
+	margin: 0 20px;
+}
+
+.path-nav ul li{
+	display: inline-block;
+}
+
+.path-nav ul li::after{
+	color: rgb(150, 150, 150);
+	content: " /";
+}
+
+.path-nav ul li.back{
+	margin-right: 40px;
+}
+
+.path-nav ul li.back::after{
+	content: none;
+}
+
+.path-nav a{
+	line-height: 40px;
+	text-decoration: none;
+	color: rgb(150, 150, 150);
+}
+
+/*
+ * Website content
+ */
+.site-body{
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
+
+/*
+ * Footer theme
+ */
+.tm-footer{
+	min-height: 40px;
+	line-height: 40px;
+	color: #ffffff;
+	background: linear-gradient(to right, rgb(165, 214, 167), rgb(76, 175, 80), rgb(165, 214, 167));
+}
+
+.copyright{
+	text-align: center;
+}
+
+.footer-box{
+	float: left;
+	width: 33.3%;
+	color: rgb(27, 94, 32);
+}
+
+.footer-box .links{
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.footer-box h3 {
+	display: block;
+	text-align: center;
+}
+
+.footer-box ul{
+	list-style-type: none;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer-box ul li a{
+	text-decoration: none;
+	color: rgb(27, 94, 32);
+}

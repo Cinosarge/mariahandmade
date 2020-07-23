@@ -1,0 +1,97 @@
+/*
+ * Un semplice modal-box sovrapposto alla pagina. Può servire per effettuare una scelta,
+ * per chiedere conferma oppure per inviare dati in modo asincrono.
+ */
+
+div#grey-pane {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 0 20px;
+}
+
+div#grey-pane > div.modal-box {
+	display: block;
+	margin: 50px auto 0;
+	border-radius: 8px;
+	background-color: white;
+	max-width: 300px;
+}
+
+div.modal-box > header {
+	height: 45px;
+	line-height: 45px;
+	border-radius: 8px 8px 0 0;
+	background: linear-gradient(to right, rgb(76, 175, 80), rgb(165, 214, 167));
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+div.modal-box > header button[name="exit"] {
+	float: right;
+	min-width: 45px;
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border-radius: 0 8px 0 0;
+}
+
+div.modal-box > header button[name="exit"]:hover {
+	background-color: rgba(204, 0, 0, 0.5);
+}
+
+div.modal-box > section {
+	padding: 8px 20px;
+	background: rgb(255, 255, 240);
+}
+
+div.modal-box > section textarea {
+	display: block;
+	border: none;
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	background-color: rgb(255, 255, 240);
+	padding: 5px;
+	font-style: italic;
+}
+
+div.modal-box > section > form{
+	clear: left;
+}
+
+div.modal-box > footer {
+	height: 45px;
+	line-height: 45px;
+	border-radius: 0 0 8px 8px;
+	background: linear-gradient(to right, rgb(76, 175, 80), rgb(165, 214, 167));
+}
+
+div.modal-box > footer button {
+	height: 100%;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+}
+
+div.modal-box > footer button:hover {
+	background-color: rgba(76, 175, 80, 0.7);
+}
+
+div.modal-box > footer button[name="rightOption"] {
+	float: right;
+	border-radius: 0 0 8px 0;
+}
+
+div.modal-box > footer button[name="leftOption"] {
+	float: left;
+	border-radius: 0 0 0 8px;
+}

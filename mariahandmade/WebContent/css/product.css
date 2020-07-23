@@ -1,0 +1,63 @@
+@charset "ISO-8859-1";
+
+.product {
+	box-sizing: border-box;
+	margin: 0 3px 8px 0;
+	padding: 8px;
+	border: 1px solid #CCCCCC;
+	width: 19.5%;
+	float: left;
+	position: relative;
+}
+
+@media screen AND (max-width: 900px) {
+	.product {
+		width: 24%
+	}
+}
+
+@media screen AND (max-width: 800px) {
+	.product {
+		width: 32%
+	}
+}
+
+@media screen AND (max-width: 600px) {
+	.product {
+		width: 49%
+	}
+}
+
+@media screen AND (max-width: 500px) {
+	.product {
+		width: 100%
+	}
+}
+
+.product img {
+	display: block;
+	width: 100%;
+}
+
+.product .name {
+	display: block;
+	width: 80%;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	color: green;
+	font-size: 16pt;
+}
+
+.product .description {
+	display: block;
+	width: 100%;
+	font-style: italic;
+	font-size: 12pt;
+	margin-bottom: 5px;
+}
+
+.product .price {
+	display: block;
+	width: 100%;
+}

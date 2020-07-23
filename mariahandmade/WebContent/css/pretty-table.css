@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+.pretty {
+	border: 2px solid transparent;
+}
+
+.pretty tr:nth-child(2n + 1) {
+	background: #82C168;
+}
+
+.pretty tr:nth-child(2n) {
+	background: #C2FF91;
+}
+
+.pretty th {
+	padding: 0 8px 0 8px;
+	background: rgb(76, 175, 80);
+}
+
+.pretty td {
+	padding: 0 8px 0 8px;
+}

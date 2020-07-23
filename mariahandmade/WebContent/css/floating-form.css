@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+/*
+ * Form styling
+ */
+ .tm-floating-form {
+	float: left;
+	font-size: 1.1em;
+	margin: 0 20px 20px 0;
+}
+
+.tm-floating-form fieldset {
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.tm-floating-form legend {
+	color: #808080;
+}
+
+.tm-floating-form fieldset div {
+	float: right;
+	clear: right;
+	margin-bottom: 10px;
+	color: #303030;
+}
+
+.tm-floating-form fieldset div img {
+	float: right;
+}
+
+.tm-floating-form input {
+	color: #303030;
+	padding: 3px;
+}
+
+.tm-floating-form button {
+	color: #303030;
+	padding: 3px;
+}
+
+.tm-floating-form input:focus {
+	background-color: #C2FF91;
+}
+
+.tm-floating-form button:focus {
+	background-color: #C2FF91;
+}
+
+.tm-floating-form select {
+	color: #303030;
+	padding: 2px;
+}
+
+.tm-floating-form hr {
+	margin: 10px 0;
+}
+
+.tm-floating-form h3 {
+	font-size: 1em;
+}
+
+.policies {
+	display: block;
+}

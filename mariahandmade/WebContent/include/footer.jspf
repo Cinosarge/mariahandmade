@@ -1,0 +1,42 @@
+	<footer class="tm-footer float-wrapper">
+		<div class="tm-container">
+			<div class="copyright">
+				<span id="copyrightYear">&copy; Copyright Maria Handmade 2018 - </span>
+				<script>
+					document.getElementById("copyrightYear").innerHTML += ( new Date() ).getFullYear();
+				</script>
+			</div>
+		</div>
+
+		<hr class="generic-hr"/>
+
+		<div class="tm-container">
+			<div class="footer-box">
+				<div class="links">
+					<h3>Informazioni</h3>
+					<ul>
+						<li><a href="About.jsp">Chi sono</a></li>
+						<li><a href="Privacy.jsp">Privacy</a></li>
+						<li><a href="Info.jsp">Info Artigianato</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-box">
+				<div class="links float-wrapper">
+					<h3>Social</h3>
+					<ul>
+						<li><a href="${initParam.adminFbPage}">Facebook</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-box">
+				<div class="links">
+					<h3>Contatti</h3>
+					<ul>
+						<li>Cellulare: ${initParam.adminPhone}</li>
+						<li>Mail: ${initParam.adminEmail}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>

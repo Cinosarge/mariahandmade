@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+
+.product {
+	display: block;
+	padding: 8px;
+	border-bottom: 1px solid #CCCCCC;
+	margin: 5px;
+}
+
+.product img {
+	float: left;
+	width: 100px;
+	height: auto;
+}
+
+.product-side-data {
+	float: left;
+	margin-left: 10px;
+}
+
+.product .name {
+	float:left;
+	color: green;
+	font-size: 16pt;
+}
+
+.product .description {
+	float: left;
+	clear: left;
+	font-style: italic;
+	font-size: 12pt;
+	margin-bottom: 10px;
+}
+
+.product .price {
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}
+
+.product .deal {
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}
+
+.product .minInventory {
+	float: left;
+	clear: left;
+	margin-bottom: 5px;
+}

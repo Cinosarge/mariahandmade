@@ -1,4 +1,4 @@
-# mariahandmade
+# 🛒 mariahandmade
 An e-commerce for handmade products developed for the Web Course at University of Salerno. It does not meet any security requirements for an e-commerce (and any security standard at all) and has to be considered for didactical use only.
 
 ## Purpose

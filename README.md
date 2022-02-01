@@ -9,7 +9,7 @@ This is a JavaEE 8 compliant Web Application. I suggest to use the following con
 + Use Tomcat 8.5
 + Use JavaSE version 8
 + Use Eclipse IDE for Java Developers version 2020-06 (this version runs on Java 8)
-+ Use DBeaver to operate upon the SQLite database
++ Use DBeaver 21.0.0 to operate upon the SQLite database
 
 Importing the project under Windows
 + Extract the "enricosbrighi" folder contained within "sbrighienrico.rar" and put it under C:/
